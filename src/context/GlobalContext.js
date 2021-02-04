@@ -39,12 +39,13 @@ const GlobalContextProvider = (props) => {
     return (
         <GlobalContext.Provider value={{
             transactions: state.transactions,
-            addTransaction: addTransaction,
-            deleteTransaction: deleteTransaction,
-            updateTransaction: updateTransaction,
-            setCurrent: setCurrent,
-            clearCurrent,
-            current: state.current
+            current: state.current,
+            addTransaction,
+            deleteTransaction,
+            updateTransaction,
+            setCurrent,
+            clearCurrent
+          
         }}>
             {props.children}
         </GlobalContext.Provider>
